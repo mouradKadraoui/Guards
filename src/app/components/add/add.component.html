@@ -1,0 +1,17 @@
+<form class=" mt-5 m-auto" style="width: 700px;">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="name" #name>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" #email>
+  </div>
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" #password>
+  </div>
+
+  <button (click)="addUser(name.value,email.value,password.value)" class="btn btn-primary">Submit</button>
+</form>

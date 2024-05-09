@@ -1,0 +1,8 @@
+
+<form class=" mt-5 m-auto" style="width: 500px;">
+    <label for="email" class="m-2">Email:</label>
+    <input class="form-control" type="text" name="email" #email>
+    <label for="password" class="m-2">Password:</label>
+    <input class="form-control" type="password" name="password" #password>
+    <button class="btn  m-3" (click)="authenticated(email.value,password.value)">Login</button>
+</form>
